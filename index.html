@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image  Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 class="gallery-heading">Image Filter Gallery &nbsp; <br> Muhammad  Sami </h1>
+
+    <div class="filter-container">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cars">Cars</button>
+        <button class="filter-btn" data-filter="bikes">Bikes</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+    </div>
+
+    <div class="gallery">
+
+
+        <!-- Car items -->
+        <div class="item cars">
+            <img src="car1.jpg" alt="Red sports car">
+            <div class="overlay-text">
+                <span class="text">fancy Car 1</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- second row -->
+        <div class="item cars">
+            <img src="car5.jpg" alt="Blue sedan">
+            <div class="overlay-text">
+                <span class="text">fancy Car 2</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- third  -->
+        <div class="item cars">
+            <img src="car4.jpg" alt="Blue  1sedan">
+            <div class="overlay-text">
+                <span class="text">fancy Car 3</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+
+
+        <!-- Bike items -->
+        <div class="item bikes">
+            <img src="bike.jpg" alt="Mountain bike">
+            <div class="overlay-text">
+                <span class="text">bike 1</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- second row -->
+        <div class="item bikes">
+            <img src="bike1.jpg" alt="Road bike">
+            <div class="overlay-text">
+                <span class="text">Bike 2</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+
+        <!-- third row -->
+
+        <div class="item bikes">
+            <img src="bike3.jpg" alt="Road bike">
+            <div class="overlay-text">
+                <span class="text">Bike 3</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+
+        <!-- Nature items -->
+        <div class="item nature">
+            <img src="mountain 3.jpg" alt="Mountain view">
+            <div class="overlay-text">
+                <span class="text">Majestic mountain view 1</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- second row  -->
+        <div class="item nature">
+            <img src="mountain2.jpeg" alt="Mountain view">
+            <div class="overlay-text">
+                <span class="text">Majestic mountain view 2</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <!-- third row   -->
+        <div class="item nature">
+            <img src="mountain 3-2093459-18542797.jpg" alt="Mountain view">
+            <div class="overlay-text">
+                <span class="text">Majestic mountain view 3</span>
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+
+
+        <!-- 
+    </div> -->
+
+    </div>
+
+    <div class="upload-container">
+        <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+        <button class="upload-btn" onclick="document.getElementById('file-input').click();">Add Your Own Images</button>
+        <div class="upload-preview"></div>
+        <input type="text" id="image-description" placeholder="Enter image description" />
+        <button class="upload-submit-btn">Upload Images</button>
+        <div class="upload-error" id="upload-error"></div>
+    </div>
+
+    <div class="loading-spinner" id="loading-spinner"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
